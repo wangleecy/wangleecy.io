@@ -1,0 +1,215 @@
+<!DOCTYPE html><html lang="zh-TW" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>王李福利基金會 - 以「取之於社會，用之於社會」的愛心與理念，幫助社會上需要幫助的人，發揚「人飢己飢，人溺己溺」的精神，推展舉辦各項社會福利慈善事業為宗旨。</title><meta name="author" content="Wang Lee"><meta name="copyright" content="Wang Lee"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="王李福利基金會">
+<meta property="og:url" content="http://example.com/page/2/">
+<meta property="og:site_name" content="王李福利基金會">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="http://example.com/img/butterfly-icon.png">
+<meta property="article:author" content="Wang Lee">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/butterfly-icon.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/page/2/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '複製成功',
+    error: '複製失敗',
+    noSupport: '瀏覽器不支援'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '剛剛',
+    min: '分鐘前',
+    hour: '小時前',
+    day: '天前',
+    month: '個月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '載入更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '王李福利基金會',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  isShuoshuo: false
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">王李福利基金會</span></a></span><div id="menus"></div></nav><div id="site-info"><h1 id="site-title">王李福利基金會</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/07/13/20241031150127628/" title="認真的男人最帥、認真的女人最美">認真的男人最帥、認真的女人最美</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">發表於</span><time datetime="2024-07-13T06:55:52.000Z" title="發表於 2024-07-13 14:55:52">2024-07-13</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%9F%BA%E9%87%91%E6%9C%83%E5%AE%A3%E5%B0%8E/">基金會宣導</a></span></div><div class="content"> 認真的男人最帥、認真的女人最美🎉🎉🎉 　　嘉義市目前有39個社區關懷據點，分散在嘉義市轄內的各個角落，除提供長輩們關懷、照顧與陪伴外，各據點的工作夥伴與志工朋友更是協助政府推廣各項福利服務措施的重要一員。 　　王李基金會的工作夥伴們總是利用各種機會用力的宣導嘉義市政府委託辦理的各項福利服務計畫，期能使符合服務的對象皆能獲得適切的服務，方不辜負政府推動各項福利服務措施的良法美意。 　　王李基金會接受嘉義市政府委託辦理社區關懷據點培力與輔導計畫，7&#x2F;12假福添福基金會會議室辦理社區關懷據點專職人員暨志工培訓課程，邀請拱香醫中蕭媛文醫學博士 主講「漢醫治酸痛—不藥而癒」，蕭博士結合中醫、穴道、飲食、節氣⋯，生動活潑、實用有趣的課程內容，讓大家都覺得欲罷不能，收穫滿滿。 　　上課前，王李基金會的帥哥美女也借用老師一些時間，輪番上台介紹相關身障者自立與社會參與溫馨交通接送及推動實物銀行服務計畫，優採輔導與推廣計畫 並媒合 #嘉義市啟智協會再耕園保康清潔​隊於現場設攤及宣導本市8家優採單位的產品與服務⋯ 　　圓圓滿滿的一個下午，感謝大家的互相成就。 謝謝🙏...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/07/04/20241031145513151/" title="實物銀行服務「嘉倍」 嘉市府攜手善心店家助弱勢">實物銀行服務「嘉倍」 嘉市府攜手善心店家助弱勢</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">發表於</span><time datetime="2024-07-04T06:53:36.000Z" title="發表於 2024-07-04 14:53:36">2024-07-04</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%AF%A6%E7%89%A9%E9%8A%80%E8%A1%8C/">實物銀行</a></span></div><div class="content"> 實物銀行服務「嘉倍」 嘉市府攜手善心店家助弱勢 【諸羅新媒 劉芳妃&#x2F;嘉市 報導】今(113)年1月起嘉義市政府委託財團法人台灣省王李社會福利慈善事業基金會辦理實物銀行，於再耕園成立實體店面，透過配置充沛專業人力、溫馨充裕的實物銀行空間及每月開放達26天的領取時間，從112年每月服務戶數約88戶，至今年6月提升為163戶，服務戶數持續增加，顯見經濟弱勢民眾對於物資的需求，今年度提供的加值服務為依家戶經濟狀況加發實物餐券及提供新生兒幸福包，目前實物餐券合約店家有嘉義市腦麻協會麻吉烘培坊、劉里長雞肉飯店、世洲排骨飯便當、若竹兒愛心商店、三哥食品行、多那之複合式咖啡蛋糕烘培、福源肉粽店，希望有更多的善心店家加入提供餐食服務，支持嘉義市經濟弱勢家庭免於挨餓。 台電嘉義區處長許墩貴帶領同仁到「嘉義市實物銀行」捐贈2萬元物資基金，讓弱勢家庭感到溫暖，帶動社會扶弱濟貧的善良風氣。嘉義市政府社會處李思賢處長感謝台電嘉義區處展現熱心公益、服務社會的情操，對社會處和弱勢族群的支持，未來更期盼大家能拋磚引玉，加入慈善關懷行動行列，一起合作更多的公益事項，為地方社會發展貢獻力量。...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/06/28/20241103134634585/" title="正聲廣播公司嘉義廣播電台宣導基金會各項服務計畫">正聲廣播公司嘉義廣播電台宣導基金會各項服務計畫</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">發表於</span><time datetime="2024-06-28T05:45:11.000Z" title="發表於 2024-06-28 13:45:11">2024-06-28</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%9F%BA%E9%87%91%E6%9C%83%E5%AE%A3%E5%B0%8E/">基金會宣導</a></span></div><div class="content"> 聲廣播公司嘉義廣播電台宣導基金會各項服務計畫 感謝🙏 正聲廣播公司嘉義廣播電台諸羅采風主持人怡妙科長的邀約，王李基金會 的工作夥伴6&#x2F;27至正聲電台就113年接受嘉義市政府委託辦理的各項服務計畫進行訪談，期待藉由廣播節目的播出，能讓更多的嘉義市民更了解相關嘉義市實物銀行身障者自立溫馨交通接送計程車🚕券補助社區關懷據點培力輔導及身障機構團體及庇護工場優採等各項服務計畫的內容，共創幸福美好的嘉義市❤️        </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/06/28/20241031124324813/" title="捐款芳名冊">捐款芳名冊</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">發表於</span><time datetime="2024-06-28T04:40:03.000Z" title="發表於 2024-06-28 12:40:03">2024-06-28</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8D%90%E6%AC%BE%E8%8A%B3%E5%90%8D%E5%86%8A/">捐款芳名冊</a></span></div><div class="content"> 捐款芳名冊 112年度下半年    捐款芳名冊 113年度上半年   </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/06/26/20241031142129934/" title="勇媽阿惠-黃敏惠市長~~『幸福嘉義市，你我來＋１』">勇媽阿惠-黃敏惠市長~~『幸福嘉義市，你我來＋１』</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">發表於</span><time datetime="2024-06-26T06:18:40.000Z" title="發表於 2024-06-26 14:18:40">2024-06-26</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%BA%AB%E5%BF%83%E9%9A%9C%E7%A4%99%E8%80%85%E8%87%AA%E7%AB%8B%E5%8F%8A%E7%A4%BE%E6%9C%83%E5%8F%83%E8%88%87%E8%A8%88%E7%95%AB/">身心障礙者自立及社會參與計畫</a></span></div><div class="content"> 勇媽阿惠-黃敏惠市長~~『幸福嘉義市，你我來＋１』 嘉義市政府為讓身心障礙照顧服務再升級，落實身心障礙者權利公約精神，委託王李基金會辦理113年「身心障礙者自立及社會參與溫馨接送服務」，社會處及身障福利科林宜君科長偕王李基金會專案人員等至快樂聯播網嘉樂電台接受快樂雲嘉南張敏玲主持人訪談，節目中除針對本服務計畫適用對象、服務內容及申請辦法等說明外，宜君科長並表示：為體諒身心障礙朋友來回奔波之苦，勇媽阿惠-黃敏惠市長宣布，符合本計畫之服務對象，自7月份起得一次性核發6個月份之計程車乘車券。 服務對象 (1)設籍嘉義市(以下簡稱本市)且領有中度以上視覺障礙、肢體障礙或多重障礙(含視障或肢障)之身心障礙證明者。 (2)符合資格者每月核發計程車乘車券每張面額為50元，每月最高補助200 元，限當月有效，不得累計至次月使用。 應備文件： 1.申請表 2.身心障礙證明影本 3.國民身分證正、反面影本 (影本須加註「與正本相符」，並請簽名或蓋章；另需持正本供承辦單位核對。） 申辦時間及地點  1.時間：週一至週五：08:00-12:00  13:30-17:30    ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/06/21/20241031141609215/" title="期交所捐贈物資進貨">期交所捐贈物資進貨</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">發表於</span><time datetime="2024-06-21T06:14:41.000Z" title="發表於 2024-06-21 14:14:41">2024-06-21</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%89%A9%E8%B3%87%E6%8D%90%E8%B4%88/">物資捐贈</a></span></div><div class="content"> 期交所捐贈物資進貨🛒 感謝王李基金會的工作夥伴 感謝王李志工隊志工 感謝腦麻協會的寶貝們 感謝人安基金會的夥伴 大家辛苦了！🙏        </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/06/19/20241031131129119/" title="幸福抵嘉與愛同行身障服務再升級記者會">幸福抵嘉與愛同行身障服務再升級記者會</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">發表於</span><time datetime="2024-06-19T05:06:50.000Z" title="發表於 2024-06-19 13:06:50">2024-06-19</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%BA%AB%E5%BF%83%E9%9A%9C%E7%A4%99%E8%80%85%E8%87%AA%E7%AB%8B%E5%8F%8A%E7%A4%BE%E6%9C%83%E5%8F%83%E8%88%87%E8%A8%88%E7%95%AB/">身心障礙者自立及社會參與計畫</a></span></div><div class="content"> “幸福抵嘉與愛同行” 身障服務再升級記者會 　　王李基金會接受嘉義市政府委託辦理嘉義市113年促進身心障礙者自立及社會參與計畫 於今(19)日在市府舉辦幸福抵嘉與愛同行身障服務再升級記者會，今日嘉義市大家長 勇媽阿惠 - 黃敏惠雖因另有要公，未能親臨主持記者會，但關心身心障礙朋友的心始終如一。 　　嘉義市府為提升身心障礙照顧服務，今年投入8億餘元預算推動各項身心障礙者福利服務，副市長林瑞彥主持身障服務再升級記者會 ，宣佈今年公益彩券預算增加7千多萬元，推動辦理「身心障礙者服務中心」、 推動「自立及社會參與」溫馨接送服務、「困難個案照顧品質提升」及「培力暨高照顧負荷關懷」 等方案。更領先各縣市推出 「身心障礙機構服務人員留才久任補助」方案，加碼補助薪資留下照護人才，公私齊力為身心障礙者福利及權益努力，落實身心障礙者權利公約精神，打造「全齡共享、世代宜居」幸福嘉義市。 　　交通移動是身心障礙者取得生活資源和社會參與的重要媒介，為落實身心障礙者「自立生活融入社區」，首推「自立及社會參與溫馨接送服務」，協助...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/06/15/20241031165709206/" title="王李基金會於今日（6/15）召開上半年志工隊隊務會議">王李基金會於今日（6/15）召開上半年志工隊隊務會議</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">發表於</span><time datetime="2024-06-15T08:54:59.000Z" title="發表於 2024-06-15 16:54:59">2024-06-15</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%AF%A6%E7%89%A9%E9%8A%80%E8%A1%8C/">實物銀行</a></span></div><div class="content"> 王李基金會於今日（6&#x2F;15）召開上半年 志工隊隊務會議 　　王李基金會於本(113)年初接受嘉義市政府委託辦理「113年推動嘉義市實物銀行服務計畫」，感謝志工伙伴們每天排班協助發放及整理物資等工作，目前實物銀行透過每月發放物資的方式援助清寒弱勢家庭截至本(113)年5月底止援助個案共計529戶，志工服務人次共計156人次。 王李基金會113年接受嘉義市政府委託辦理之方案計畫計下列四項： 　推動嘉義市實物銀行服務計畫 　社區照顧關懷據點培力及輔導計畫 　促進身心障礙者自立及社會參與計畫 　優先採購輔導與推廣計畫 上列各項方案在辦理各項相關活動與支援工作時，均需志工伙伴的協助與幫忙。 助人最樂服務最榮 志願者是一盞燈照亮別人的同時也溫暖了自己 感謝每一位志工夥伴～有你真好          </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/06/14/20241031171710597/" title="王李基金會接受嘉義市政府委託辦理嘉義巿113年優先採購輔導與推廣計畫 ~">王李基金會接受嘉義市政府委託辦理嘉義巿113年優先採購輔導與推廣計畫 ~</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">發表於</span><time datetime="2024-06-14T09:15:22.000Z" title="發表於 2024-06-14 17:15:22">2024-06-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%84%AA%E5%85%88%E6%8E%A1%E8%B3%BC%E8%BC%94%E5%B0%8E%E8%88%87%E6%8E%A8%E5%BB%A3/">優先採購輔導與推廣</a></span></div><div class="content"> 王李基金會接受嘉義市政府委託辦理嘉義巿113年優先採購輔導與推廣計畫 ~ 今(14)日13：30假再耕園4樓國際會議廳，舉辦113年優先採購教育訓練暨優採廠商聯合展覽推廣會，由社會處救助及身障福利科林宜君科長出席主持，會中邀請啟智協會、腦麻協會、嘉愛啟智發中心、晨光智能發展中心、再耕園咖啡庇護工場、再耕園保康清潔隊、立宇庇護工場、清健庇護工場等8家優採單位，現場也結合設攤，向各級機關學校及與會人員宣導介紹優採單位的特色及用心生產的產品，讓義務採購單位及社會大眾對於本市各身心障礙福利機構團體或庇護工場所提供之產品及服務更加熟悉了解，提升產品之能見度及採購意願，以協助更多的身障礙者自立自強，提供更多的就業機會。               </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/06/07/20241031123526802/" title="實物銀行捐贈">實物銀行捐贈</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">發表於</span><time datetime="2024-06-07T04:35:00.000Z" title="發表於 2024-06-07 12:35:00">2024-06-07</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%AF%A6%E7%89%A9%E9%8A%80%E8%A1%8C%E6%8D%90%E8%B4%88/">實物銀行捐贈</a></span></div><div class="content"> 王李基金會 嘉義市實物銀行 實物銀行的物資主要來自社會大眾的捐贈，最大宗的捐贈來源來自於每3個月捐贈一次的期貨交易所及統一企業 ，每季來到第三個月，實物銀行的架上幾乎都要空了，雖然嘉義市政府 也幫忙採購一些物資來補充，但面對越來越多亟需物資補助的弱勢家庭，實物銀行現有的物資仍不足以提供到每一位服務對象的需求… 感謝善心人士黃0博先生一次又一次的主動來到嘉義市實物銀行以媽媽彭女士的名義捐贈麵條、飲品、餅乾⋯等，數量雖然不多，但也能給來到實物銀行的服務對象一點小確幸⋯謝謝您 惜福愛物 分享感恩      </div></div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/#content-inner">3</a><a class="page-number" href="/page/4/#content-inner">4</a><a class="extend next" rel="next" href="/page/3/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Wang Lee</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">32</div></a><a href="/tags/"><div class="headline">標籤</div><div class="length-num">18</div></a><a href="/categories/"><div class="headline">分類</div><div class="length-num">17</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/11/23/hello-world/" title="Hello World">Hello World</a><time datetime="2024-11-23T03:54:20.315Z" title="發表於 2024-11-23 11:54:20">2024-11-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/17/20241031164254143/" title="王李傳承愛 居家樂無礙 ~ 王李居家服務工作開展囉!">王李傳承愛 居家樂無礙 ~ 王李居家服務工作開展囉!</a><time datetime="2024-10-17T08:40:39.000Z" title="發表於 2024-10-17 16:40:39">2024-10-17</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/09/27/20241031134826285/" title="王李基金會&amp;福添福基金會聯合員工在職訓練">王李基金會&amp;福添福基金會聯合員工在職訓練</a><time datetime="2024-09-27T05:43:37.000Z" title="發表於 2024-09-27 13:43:37">2024-09-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/09/19/article2/" title="112年01月~03月 受捐助者徵信">112年01月~03月 受捐助者徵信</a><time datetime="2024-09-19T09:00:09.000Z" title="發表於 2024-09-19 17:00:09">2024-09-19</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/09/19/article3/" title="112年01月~03月 捐款芳名錄">112年01月~03月 捐款芳名錄</a><time datetime="2024-09-19T09:00:09.000Z" title="發表於 2024-09-19 17:00:09">2024-09-19</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分類</span>
+            <a class="card-more-btn" href="/categories/" title="檢視更多">
+      <i class="fas fa-angle-right"></i></a>
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%84%AA%E5%85%88%E6%8E%A1%E8%B3%BC%E8%BC%94%E5%B0%8E%E8%88%87%E6%8E%A8%E5%BB%A3/"><span class="card-category-list-name">優先採購輔導與推廣</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%8F%97%E6%8D%90%E5%8A%A9%E8%80%85%E5%BE%B5%E4%BF%A1/"><span class="card-category-list-name">受捐助者徵信</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%93%A1%E5%B7%A5%E5%9C%A8%E8%81%B7%E8%A8%93%E7%B7%B4/"><span class="card-category-list-name">員工在職訓練</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%9F%BA%E9%87%91%E6%9C%83%E5%8F%83%E8%A8%AA/"><span class="card-category-list-name">基金會參訪</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%9F%BA%E9%87%91%E6%9C%83%E5%AE%A3%E5%B0%8E/"><span class="card-category-list-name">基金會宣導</span><span class="card-category-list-count">5</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%AF%A6%E7%89%A9%E9%8A%80%E8%A1%8C/"><span class="card-category-list-name">實物銀行</span><span class="card-category-list-count">8</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%AF%A6%E7%89%A9%E9%8A%80%E8%A1%8C%E6%8D%90%E8%B4%88/"><span class="card-category-list-name">實物銀行捐贈</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%B1%85%E5%AE%B6%E6%9C%8D%E5%8B%99/"><span class="card-category-list-name">居家服務</span><span class="card-category-list-count">1</span></a></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>標籤</span></div><div class="card-tag-cloud"><a href="/tags/%E8%BA%AB%E5%BF%83%E9%9A%9C%E7%A4%99%E8%80%85%E8%87%AA%E7%AB%8B%E5%8F%8A%E7%A4%BE%E6%9C%83%E5%8F%83%E8%88%87%E8%A8%88%E7%95%AB/" style="font-size: 1.2em; color: #999da3">身心障礙者自立及社會參與計畫</a> <a href="/tags/%E6%8E%A1%E8%B3%BC%E8%BC%94%E5%B0%8E%E8%88%87%E6%8E%A8%E5%BB%A3/" style="font-size: 1.1em; color: #999">採購輔導與推廣</a> <a href="/tags/%E5%AF%A6%E7%89%A9%E9%8A%80%E8%A1%8C/" style="font-size: 1.5em; color: #99a9bf">實物銀行</a> <a href="/tags/%E8%91%A3%E4%BA%8B%E6%9C%83%E6%9C%83%E8%AD%B0/" style="font-size: 1.1em; color: #999">董事會會議</a> <a href="/tags/%E5%AF%A6%E7%89%A9%E9%8A%80%E8%A1%8C%E6%8D%90%E8%B4%88/" style="font-size: 1.1em; color: #999">實物銀行捐贈</a> <a href="/tags/112%E5%B9%B4%E5%BA%A6%E4%B8%8B%E5%8D%8A%E5%B9%B4-113%E5%B9%B4%E5%BA%A6%E4%B8%8A%E5%8D%8A%E5%B9%B4/" style="font-size: 1.1em; color: #999">112年度下半年-113年度上半年</a> <a href="/tags/%E6%8D%90%E6%AC%BE%E8%80%85%E8%8A%B3%E5%90%8D%E9%8C%84/" style="font-size: 1.1em; color: #999">捐款者芳名錄</a> <a href="/tags/%E6%96%87%E7%AB%A0%E6%A8%99%E7%B1%A4%E4%BA%8C/" style="font-size: 1.1em; color: #999">文章標籤二</a> <a href="/tags/%E5%8F%97%E6%8D%90%E5%8A%A9%E8%80%85%E5%BE%B5%E4%BF%A1/" style="font-size: 1.1em; color: #999">受捐助者徵信</a> <a href="/tags/%E6%96%87%E7%AB%A0%E6%A8%99%E7%B1%A4%E4%B8%80/" style="font-size: 1.1em; color: #999">文章標籤一</a> <a href="/tags/%E7%A4%BE%E5%8D%80%E9%97%9C%E6%87%B7%E6%93%9A%E9%BB%9E%E8%BC%94%E5%B0%8E/" style="font-size: 1.3em; color: #99a1ac">社區關懷據點輔導</a> <a href="/tags/%E5%BA%87%E8%AD%B7%E5%B7%A5%E5%A0%B4/" style="font-size: 1.1em; color: #999">庇護工場</a> <a href="/tags/%E7%89%A9%E8%B3%87%E6%8D%90%E8%B4%88/" style="font-size: 1.1em; color: #999">物資捐贈</a> <a href="/tags/%E5%93%A1%E5%B7%A5%E5%9C%A8%E8%81%B7%E8%A8%93%E7%B7%B4/" style="font-size: 1.1em; color: #999">員工在職訓練</a> <a href="/tags/%E5%9F%BA%E9%87%91%E6%9C%83%E5%8F%83%E8%A8%AA/" style="font-size: 1.1em; color: #999">基金會參訪</a> <a href="/tags/%E5%9F%BA%E9%87%91%E6%9C%83%E5%AE%A3%E5%B0%8E/" style="font-size: 1.4em; color: #99a5b6">基金會宣導</a> <a href="/tags/%E5%84%AA%E5%85%88%E6%8E%A1%E8%B3%BC%E8%BC%94%E5%B0%8E%E8%88%87%E6%8E%A8%E5%BB%A3/" style="font-size: 1.1em; color: #999">優先採購輔導與推廣</a> <a href="/tags/%E5%B1%85%E5%AE%B6%E6%9C%8D%E5%8B%99/" style="font-size: 1.1em; color: #999">居家服務</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>歸檔</span>
+      <a class="card-more-btn" href="/archives/" title="檢視更多"><i class="fas fa-angle-right"></i></a>
+    </div>
+    <ul class="card-archive-list">
+  
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2024/11/">
+          <span class="card-archive-list-date">十一月 2024</span>
+          <span class="card-archive-list-count">1</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2024/10/">
+          <span class="card-archive-list-date">十月 2024</span>
+          <span class="card-archive-list-count">1</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2024/09/">
+          <span class="card-archive-list-date">九月 2024</span>
+          <span class="card-archive-list-count">5</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2024/08/">
+          <span class="card-archive-list-date">八月 2024</span>
+          <span class="card-archive-list-count">3</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2024/07/">
+          <span class="card-archive-list-date">七月 2024</span>
+          <span class="card-archive-list-count">2</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2024/06/">
+          <span class="card-archive-list-date">六月 2024</span>
+          <span class="card-archive-list-count">8</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2024/05/">
+          <span class="card-archive-list-date">五月 2024</span>
+          <span class="card-archive-list-count">4</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2024/04/">
+          <span class="card-archive-list-date">四月 2024</span>
+          <span class="card-archive-list-count">3</span>
+        </a>
+      </li>
+    </ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>網站資訊</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章數量 :</div><div class="item-count">32</div></div><div class="webinfo-item"><div class="item-name">訪客數 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">總瀏覽量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最後更新時間 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-11-23T04:06:37.921Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2024 By Wang Lee</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主題 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日夜模式切換"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="單欄和雙欄切換"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="設定"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到頂端"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
