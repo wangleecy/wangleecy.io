@@ -106,7 +106,7 @@ deploy:
   type: git
   repo: https://github.com/wangleecy/wangleecy.git
   #repo: git@github.com:wangleecy/wangleecy.github.io.git
-  branch: master
+  branch: gh-pages
   message: "First Commit"
 
 # Search
